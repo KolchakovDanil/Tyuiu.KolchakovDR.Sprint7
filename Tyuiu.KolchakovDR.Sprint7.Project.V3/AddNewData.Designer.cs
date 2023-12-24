@@ -318,7 +318,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.MinimumSize = new System.Drawing.Size(555, 400);
             this.Name = "AddNewData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddNewData";
+            this.Text = "Добавление новых данных в таблицы";
             this.Load += new System.EventHandler(this.AddNewData_Load);
             this.panelTop_KDR.ResumeLayout(false);
             this.panelLeftTop_KDR.ResumeLayout(false);

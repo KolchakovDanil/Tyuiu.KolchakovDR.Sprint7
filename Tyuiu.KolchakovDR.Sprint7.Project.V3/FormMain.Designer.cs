@@ -45,13 +45,27 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.labelOut_KDR = new System.Windows.Forms.Label();
             this.panelLeftButton_KDR = new System.Windows.Forms.Panel();
             this.panelLeftAudi_KDR = new System.Windows.Forms.Panel();
+            this.panelLeftKaf_KDR = new System.Windows.Forms.Panel();
+            this.panelLeftPred_KDR = new System.Windows.Forms.Panel();
+            this.buttonChekFilePred_KDR = new System.Windows.Forms.Button();
+            this.buttonAddPred_KDR = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.buttonCansalePred_KDR = new System.Windows.Forms.Button();
+            this.buttonRedPred_KDR = new System.Windows.Forms.Button();
+            this.buttonSavePred_KDR = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.buttonFuncPred_KDR = new System.Windows.Forms.Button();
+            this.buttonAddKaf_KDR = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonCansaleKaf_KDR = new System.Windows.Forms.Button();
+            this.buttonRedKaf_KDR = new System.Windows.Forms.Button();
+            this.buttonSaveKaf_KDR = new System.Windows.Forms.Button();
+            this.buttonChekFileKaf_KDR = new System.Windows.Forms.Button();
             this.buttonAddAudi_KDR = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.buttonCansaleAudi_KDR = new System.Windows.Forms.Button();
             this.buttonRedAudi_KDR = new System.Windows.Forms.Button();
             this.buttonSaveAudi_KDR = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.buttonFuncAudi_KDR = new System.Windows.Forms.Button();
             this.buttonChekFileAudi_KDR = new System.Windows.Forms.Button();
             this.buttonAddTeach_KDR = new System.Windows.Forms.Button();
             this.buttonChekFileTeacher_KDR = new System.Windows.Forms.Button();
@@ -64,32 +78,35 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelTopInfo_KDR = new System.Windows.Forms.Panel();
             this.panelBottom_KDR = new System.Windows.Forms.Panel();
             this.groupBoxKolTeach_KDR = new System.Windows.Forms.GroupBox();
-            this.panelBottomAudi_KDR = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.labelRezAudi_KDR = new System.Windows.Forms.Label();
-            this.buttonRezAudi_KDR = new System.Windows.Forms.Button();
-            this.textBoxRezAudi_KDR = new System.Windows.Forms.TextBox();
             this.buttonSumTeacher_KDR = new System.Windows.Forms.Button();
             this.textBoxSum_KDR = new System.Windows.Forms.TextBox();
             this.panelRightFill_KDR = new System.Windows.Forms.Panel();
             this.panelFill_KDR = new System.Windows.Forms.Panel();
             this.toolTip_KDR = new System.Windows.Forms.ToolTip(this.components);
+            this.groupBoxKolPre_KDR = new System.Windows.Forms.GroupBox();
+            this.buttonSumPred_KDR = new System.Windows.Forms.Button();
+            this.textBoxKolPred_KDR = new System.Windows.Forms.TextBox();
+            this.buttonMinPred_KDR = new System.Windows.Forms.Button();
+            this.buttonMaxPred_KDR = new System.Windows.Forms.Button();
             this.panelTop_KDR.SuspendLayout();
             this.panelLeftTop_KDR.SuspendLayout();
             this.panelLeft_KDR.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOut_KDR)).BeginInit();
             this.panelLeftButton_KDR.SuspendLayout();
             this.panelLeftAudi_KDR.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.panelLeftKaf_KDR.SuspendLayout();
+            this.panelLeftPred_KDR.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBoxRed_KDR.SuspendLayout();
             this.groupBoxFunc_KDR.SuspendLayout();
             this.panelTopInfo_KDR.SuspendLayout();
             this.panelBottom_KDR.SuspendLayout();
             this.groupBoxKolTeach_KDR.SuspendLayout();
-            this.panelBottomAudi_KDR.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.panelFill_KDR.SuspendLayout();
+            this.groupBoxKolPre_KDR.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop_KDR
@@ -145,14 +162,15 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             // 
             this.buttonGraphTech_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGraphTech_KDR.BackgroundImage")));
             this.buttonGraphTech_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonGraphTech_KDR.Enabled = false;
             this.buttonGraphTech_KDR.FlatAppearance.BorderSize = 0;
             this.buttonGraphTech_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonGraphTech_KDR.Location = new System.Drawing.Point(68, 10);
             this.buttonGraphTech_KDR.Name = "buttonGraphTech_KDR";
             this.buttonGraphTech_KDR.Size = new System.Drawing.Size(61, 49);
             this.buttonGraphTech_KDR.TabIndex = 5;
+            this.toolTip_KDR.SetToolTip(this.buttonGraphTech_KDR, "Представление в графике");
             this.buttonGraphTech_KDR.UseVisualStyleBackColor = true;
+            this.buttonGraphTech_KDR.Click += new System.EventHandler(this.buttonGraphTech_KDR_Click);
             // 
             // panelLeft_KDR
             // 
@@ -279,9 +297,9 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             // 
             // panelLeftAudi_KDR
             // 
+            this.panelLeftAudi_KDR.Controls.Add(this.panelLeftKaf_KDR);
             this.panelLeftAudi_KDR.Controls.Add(this.buttonAddAudi_KDR);
             this.panelLeftAudi_KDR.Controls.Add(this.groupBox1);
-            this.panelLeftAudi_KDR.Controls.Add(this.groupBox2);
             this.panelLeftAudi_KDR.Controls.Add(this.buttonChekFileAudi_KDR);
             this.panelLeftAudi_KDR.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeftAudi_KDR.Location = new System.Drawing.Point(0, 0);
@@ -289,6 +307,200 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelLeftAudi_KDR.Size = new System.Drawing.Size(152, 433);
             this.panelLeftAudi_KDR.TabIndex = 10;
             this.panelLeftAudi_KDR.Visible = false;
+            // 
+            // panelLeftKaf_KDR
+            // 
+            this.panelLeftKaf_KDR.BackColor = System.Drawing.SystemColors.Control;
+            this.panelLeftKaf_KDR.Controls.Add(this.panelLeftPred_KDR);
+            this.panelLeftKaf_KDR.Controls.Add(this.buttonAddKaf_KDR);
+            this.panelLeftKaf_KDR.Controls.Add(this.groupBox2);
+            this.panelLeftKaf_KDR.Controls.Add(this.buttonChekFileKaf_KDR);
+            this.panelLeftKaf_KDR.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeftKaf_KDR.Location = new System.Drawing.Point(0, 0);
+            this.panelLeftKaf_KDR.Name = "panelLeftKaf_KDR";
+            this.panelLeftKaf_KDR.Size = new System.Drawing.Size(152, 433);
+            this.panelLeftKaf_KDR.TabIndex = 8;
+            // 
+            // panelLeftPred_KDR
+            // 
+            this.panelLeftPred_KDR.BackColor = System.Drawing.SystemColors.Control;
+            this.panelLeftPred_KDR.Controls.Add(this.buttonChekFilePred_KDR);
+            this.panelLeftPred_KDR.Controls.Add(this.buttonAddPred_KDR);
+            this.panelLeftPred_KDR.Controls.Add(this.groupBox5);
+            this.panelLeftPred_KDR.Controls.Add(this.groupBox6);
+            this.panelLeftPred_KDR.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeftPred_KDR.Location = new System.Drawing.Point(0, 0);
+            this.panelLeftPred_KDR.Name = "panelLeftPred_KDR";
+            this.panelLeftPred_KDR.Size = new System.Drawing.Size(152, 433);
+            this.panelLeftPred_KDR.TabIndex = 16;
+            // 
+            // buttonChekFilePred_KDR
+            // 
+            this.buttonChekFilePred_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonChekFilePred_KDR.BackgroundImage")));
+            this.buttonChekFilePred_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonChekFilePred_KDR.FlatAppearance.BorderSize = 0;
+            this.buttonChekFilePred_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChekFilePred_KDR.Location = new System.Drawing.Point(6, 7);
+            this.buttonChekFilePred_KDR.Name = "buttonChekFilePred_KDR";
+            this.buttonChekFilePred_KDR.Size = new System.Drawing.Size(57, 45);
+            this.buttonChekFilePred_KDR.TabIndex = 12;
+            this.toolTip_KDR.SetToolTip(this.buttonChekFilePred_KDR, "Посмотреть данные файла \"Преподаватели\"");
+            this.buttonChekFilePred_KDR.UseVisualStyleBackColor = true;
+            this.buttonChekFilePred_KDR.Click += new System.EventHandler(this.buttonChekFilePred_KDR_Click);
+            // 
+            // buttonAddPred_KDR
+            // 
+            this.buttonAddPred_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonAddPred_KDR.BackgroundImage")));
+            this.buttonAddPred_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonAddPred_KDR.FlatAppearance.BorderSize = 0;
+            this.buttonAddPred_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddPred_KDR.Location = new System.Drawing.Point(86, 7);
+            this.buttonAddPred_KDR.Name = "buttonAddPred_KDR";
+            this.buttonAddPred_KDR.Size = new System.Drawing.Size(57, 45);
+            this.buttonAddPred_KDR.TabIndex = 15;
+            this.toolTip_KDR.SetToolTip(this.buttonAddPred_KDR, "Добавить нового преподавателя");
+            this.buttonAddPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonAddPred_KDR.Click += new System.EventHandler(this.buttonAddPred_KDR_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.buttonCansalePred_KDR);
+            this.groupBox5.Controls.Add(this.buttonRedPred_KDR);
+            this.groupBox5.Controls.Add(this.buttonSavePred_KDR);
+            this.groupBox5.Location = new System.Drawing.Point(6, 293);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(143, 117);
+            this.groupBox5.TabIndex = 13;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Редактирование таблицы \"Предметы\":";
+            // 
+            // buttonCansalePred_KDR
+            // 
+            this.buttonCansalePred_KDR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonCansalePred_KDR.Location = new System.Drawing.Point(15, 88);
+            this.buttonCansalePred_KDR.Name = "buttonCansalePred_KDR";
+            this.buttonCansalePred_KDR.Size = new System.Drawing.Size(120, 23);
+            this.buttonCansalePred_KDR.TabIndex = 7;
+            this.buttonCansalePred_KDR.Text = "Отменить";
+            this.buttonCansalePred_KDR.UseVisualStyleBackColor = false;
+            this.buttonCansalePred_KDR.Visible = false;
+            this.buttonCansalePred_KDR.Click += new System.EventHandler(this.buttonCansalePred_KDR_Click);
+            // 
+            // buttonRedPred_KDR
+            // 
+            this.buttonRedPred_KDR.Location = new System.Drawing.Point(15, 49);
+            this.buttonRedPred_KDR.Name = "buttonRedPred_KDR";
+            this.buttonRedPred_KDR.Size = new System.Drawing.Size(120, 24);
+            this.buttonRedPred_KDR.TabIndex = 5;
+            this.buttonRedPred_KDR.Text = "Редактировать";
+            this.buttonRedPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonRedPred_KDR.Click += new System.EventHandler(this.buttonRedPred_KDR_Click);
+            // 
+            // buttonSavePred_KDR
+            // 
+            this.buttonSavePred_KDR.Location = new System.Drawing.Point(15, 38);
+            this.buttonSavePred_KDR.Name = "buttonSavePred_KDR";
+            this.buttonSavePred_KDR.Size = new System.Drawing.Size(120, 35);
+            this.buttonSavePred_KDR.TabIndex = 6;
+            this.buttonSavePred_KDR.Text = "Сохранить\r\nизменения";
+            this.buttonSavePred_KDR.UseVisualStyleBackColor = true;
+            this.buttonSavePred_KDR.Visible = false;
+            this.buttonSavePred_KDR.Click += new System.EventHandler(this.buttonSavePred_KDR_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.buttonMaxPred_KDR);
+            this.groupBox6.Controls.Add(this.buttonMinPred_KDR);
+            this.groupBox6.Controls.Add(this.buttonFuncPred_KDR);
+            this.groupBox6.Location = new System.Drawing.Point(6, 58);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(143, 161);
+            this.groupBox6.TabIndex = 14;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Функции:";
+            // 
+            // buttonFuncPred_KDR
+            // 
+            this.buttonFuncPred_KDR.Location = new System.Drawing.Point(6, 23);
+            this.buttonFuncPred_KDR.Name = "buttonFuncPred_KDR";
+            this.buttonFuncPred_KDR.Size = new System.Drawing.Size(131, 38);
+            this.buttonFuncPred_KDR.TabIndex = 8;
+            this.buttonFuncPred_KDR.Text = "Общее \r\nколичество часов";
+            this.buttonFuncPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonFuncPred_KDR.Click += new System.EventHandler(this.buttonFuncPred_KDR_Click);
+            // 
+            // buttonAddKaf_KDR
+            // 
+            this.buttonAddKaf_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonAddKaf_KDR.BackgroundImage")));
+            this.buttonAddKaf_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonAddKaf_KDR.FlatAppearance.BorderSize = 0;
+            this.buttonAddKaf_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddKaf_KDR.Location = new System.Drawing.Point(83, 6);
+            this.buttonAddKaf_KDR.Name = "buttonAddKaf_KDR";
+            this.buttonAddKaf_KDR.Size = new System.Drawing.Size(57, 49);
+            this.buttonAddKaf_KDR.TabIndex = 15;
+            this.toolTip_KDR.SetToolTip(this.buttonAddKaf_KDR, "Добавить новую аудиторию");
+            this.buttonAddKaf_KDR.UseVisualStyleBackColor = true;
+            this.buttonAddKaf_KDR.Click += new System.EventHandler(this.buttonAddKaf_KDR_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.buttonCansaleKaf_KDR);
+            this.groupBox2.Controls.Add(this.buttonRedKaf_KDR);
+            this.groupBox2.Controls.Add(this.buttonSaveKaf_KDR);
+            this.groupBox2.Location = new System.Drawing.Point(3, 61);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(143, 352);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Редактирование таблицы \"Кафедры\":";
+            // 
+            // buttonCansaleKaf_KDR
+            // 
+            this.buttonCansaleKaf_KDR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonCansaleKaf_KDR.Location = new System.Drawing.Point(15, 88);
+            this.buttonCansaleKaf_KDR.Name = "buttonCansaleKaf_KDR";
+            this.buttonCansaleKaf_KDR.Size = new System.Drawing.Size(120, 23);
+            this.buttonCansaleKaf_KDR.TabIndex = 7;
+            this.buttonCansaleKaf_KDR.Text = "Отменить";
+            this.buttonCansaleKaf_KDR.UseVisualStyleBackColor = false;
+            this.buttonCansaleKaf_KDR.Visible = false;
+            this.buttonCansaleKaf_KDR.Click += new System.EventHandler(this.buttonCansaleKaf_KDR_Click);
+            // 
+            // buttonRedKaf_KDR
+            // 
+            this.buttonRedKaf_KDR.Location = new System.Drawing.Point(15, 49);
+            this.buttonRedKaf_KDR.Name = "buttonRedKaf_KDR";
+            this.buttonRedKaf_KDR.Size = new System.Drawing.Size(120, 24);
+            this.buttonRedKaf_KDR.TabIndex = 5;
+            this.buttonRedKaf_KDR.Text = "Редактировать";
+            this.buttonRedKaf_KDR.UseVisualStyleBackColor = true;
+            this.buttonRedKaf_KDR.Click += new System.EventHandler(this.buttonRedKaf_KDR_Click);
+            // 
+            // buttonSaveKaf_KDR
+            // 
+            this.buttonSaveKaf_KDR.Location = new System.Drawing.Point(15, 38);
+            this.buttonSaveKaf_KDR.Name = "buttonSaveKaf_KDR";
+            this.buttonSaveKaf_KDR.Size = new System.Drawing.Size(120, 35);
+            this.buttonSaveKaf_KDR.TabIndex = 6;
+            this.buttonSaveKaf_KDR.Text = "Сохранить\r\nизменения";
+            this.buttonSaveKaf_KDR.UseVisualStyleBackColor = true;
+            this.buttonSaveKaf_KDR.Visible = false;
+            this.buttonSaveKaf_KDR.Click += new System.EventHandler(this.buttonSaveKaf_KDR_Click);
+            // 
+            // buttonChekFileKaf_KDR
+            // 
+            this.buttonChekFileKaf_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonChekFileKaf_KDR.BackgroundImage")));
+            this.buttonChekFileKaf_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonChekFileKaf_KDR.FlatAppearance.BorderSize = 0;
+            this.buttonChekFileKaf_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChekFileKaf_KDR.Location = new System.Drawing.Point(6, 6);
+            this.buttonChekFileKaf_KDR.Name = "buttonChekFileKaf_KDR";
+            this.buttonChekFileKaf_KDR.Size = new System.Drawing.Size(57, 49);
+            this.buttonChekFileKaf_KDR.TabIndex = 13;
+            this.toolTip_KDR.SetToolTip(this.buttonChekFileKaf_KDR, "Посмотреть данные файла \"Аудитории\"");
+            this.buttonChekFileKaf_KDR.UseVisualStyleBackColor = true;
+            this.buttonChekFileKaf_KDR.Click += new System.EventHandler(this.buttonChekFileKaf_KDR_Click_1);
             // 
             // buttonAddAudi_KDR
             // 
@@ -309,12 +521,12 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.groupBox1.Controls.Add(this.buttonCansaleAudi_KDR);
             this.groupBox1.Controls.Add(this.buttonRedAudi_KDR);
             this.groupBox1.Controls.Add(this.buttonSaveAudi_KDR);
-            this.groupBox1.Location = new System.Drawing.Point(3, 292);
+            this.groupBox1.Location = new System.Drawing.Point(3, 61);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(143, 121);
+            this.groupBox1.Size = new System.Drawing.Size(143, 352);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Редактирование таблицы:";
+            this.groupBox1.Text = "Редактирование таблицы \"Аудитории\":";
             // 
             // buttonCansaleAudi_KDR
             // 
@@ -348,26 +560,6 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonSaveAudi_KDR.UseVisualStyleBackColor = true;
             this.buttonSaveAudi_KDR.Visible = false;
             this.buttonSaveAudi_KDR.Click += new System.EventHandler(this.buttonSaveAudi_KDR_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.buttonFuncAudi_KDR);
-            this.groupBox2.Location = new System.Drawing.Point(3, 57);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(143, 96);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Функции:";
-            // 
-            // buttonFuncAudi_KDR
-            // 
-            this.buttonFuncAudi_KDR.Location = new System.Drawing.Point(6, 33);
-            this.buttonFuncAudi_KDR.Name = "buttonFuncAudi_KDR";
-            this.buttonFuncAudi_KDR.Size = new System.Drawing.Size(131, 38);
-            this.buttonFuncAudi_KDR.TabIndex = 8;
-            this.buttonFuncAudi_KDR.Text = "Аудитория - Этаж";
-            this.toolTip_KDR.SetToolTip(this.buttonFuncAudi_KDR, "Провить на каком этаже какие аудитории");
-            this.buttonFuncAudi_KDR.UseVisualStyleBackColor = true;
             // 
             // buttonChekFileAudi_KDR
             // 
@@ -423,7 +615,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.groupBoxRed_KDR.Size = new System.Drawing.Size(143, 121);
             this.groupBoxRed_KDR.TabIndex = 8;
             this.groupBoxRed_KDR.TabStop = false;
-            this.groupBoxRed_KDR.Text = "Редактирование таблицы:";
+            this.groupBoxRed_KDR.Text = "Редактирование таблицы \"Преподаватели\":";
             this.groupBoxRed_KDR.Visible = false;
             // 
             // buttonCansel_KDR
@@ -501,7 +693,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             // 
             // groupBoxKolTeach_KDR
             // 
-            this.groupBoxKolTeach_KDR.Controls.Add(this.panelBottomAudi_KDR);
+            this.groupBoxKolTeach_KDR.Controls.Add(this.groupBoxKolPre_KDR);
             this.groupBoxKolTeach_KDR.Controls.Add(this.buttonSumTeacher_KDR);
             this.groupBoxKolTeach_KDR.Controls.Add(this.textBoxSum_KDR);
             this.groupBoxKolTeach_KDR.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -512,59 +704,6 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.groupBoxKolTeach_KDR.TabStop = false;
             this.groupBoxKolTeach_KDR.Text = "Рассчёт количества преподавателей:";
             this.groupBoxKolTeach_KDR.Visible = false;
-            // 
-            // panelBottomAudi_KDR
-            // 
-            this.panelBottomAudi_KDR.Controls.Add(this.groupBox3);
-            this.panelBottomAudi_KDR.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelBottomAudi_KDR.Location = new System.Drawing.Point(3, 0);
-            this.panelBottomAudi_KDR.Name = "panelBottomAudi_KDR";
-            this.panelBottomAudi_KDR.Size = new System.Drawing.Size(551, 80);
-            this.panelBottomAudi_KDR.TabIndex = 11;
-            this.panelBottomAudi_KDR.Visible = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.labelRezAudi_KDR);
-            this.groupBox3.Controls.Add(this.buttonRezAudi_KDR);
-            this.groupBox3.Controls.Add(this.textBoxRezAudi_KDR);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(0, 0);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(551, 80);
-            this.groupBox3.TabIndex = 11;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Сколько аудиторий на этаже";
-            this.groupBox3.Visible = false;
-            // 
-            // labelRezAudi_KDR
-            // 
-            this.labelRezAudi_KDR.AutoSize = true;
-            this.labelRezAudi_KDR.Location = new System.Drawing.Point(129, 24);
-            this.labelRezAudi_KDR.Name = "labelRezAudi_KDR";
-            this.labelRezAudi_KDR.Size = new System.Drawing.Size(44, 13);
-            this.labelRezAudi_KDR.TabIndex = 11;
-            this.labelRezAudi_KDR.Text = "Ответ: ";
-            // 
-            // buttonRezAudi_KDR
-            // 
-            this.buttonRezAudi_KDR.Location = new System.Drawing.Point(8, 48);
-            this.buttonRezAudi_KDR.Name = "buttonRezAudi_KDR";
-            this.buttonRezAudi_KDR.Size = new System.Drawing.Size(87, 23);
-            this.buttonRezAudi_KDR.TabIndex = 10;
-            this.buttonRezAudi_KDR.Text = "Рассчетать";
-            this.buttonRezAudi_KDR.UseVisualStyleBackColor = true;
-            this.buttonRezAudi_KDR.Visible = false;
-            this.buttonRezAudi_KDR.Click += new System.EventHandler(this.buttonRezAudi_KDR_Click);
-            // 
-            // textBoxRezAudi_KDR
-            // 
-            this.textBoxRezAudi_KDR.Location = new System.Drawing.Point(8, 21);
-            this.textBoxRezAudi_KDR.MaxLength = 2;
-            this.textBoxRezAudi_KDR.Name = "textBoxRezAudi_KDR";
-            this.textBoxRezAudi_KDR.Size = new System.Drawing.Size(87, 22);
-            this.textBoxRezAudi_KDR.TabIndex = 9;
-            this.textBoxRezAudi_KDR.Visible = false;
             // 
             // buttonSumTeacher_KDR
             // 
@@ -604,6 +743,58 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelFill_KDR.Size = new System.Drawing.Size(536, 292);
             this.panelFill_KDR.TabIndex = 11;
             // 
+            // groupBoxKolPre_KDR
+            // 
+            this.groupBoxKolPre_KDR.Controls.Add(this.buttonSumPred_KDR);
+            this.groupBoxKolPre_KDR.Controls.Add(this.textBoxKolPred_KDR);
+            this.groupBoxKolPre_KDR.Location = new System.Drawing.Point(3, 0);
+            this.groupBoxKolPre_KDR.Name = "groupBoxKolPre_KDR";
+            this.groupBoxKolPre_KDR.Size = new System.Drawing.Size(551, 80);
+            this.groupBoxKolPre_KDR.TabIndex = 12;
+            this.groupBoxKolPre_KDR.TabStop = false;
+            this.groupBoxKolPre_KDR.Text = "Общее количество учебных часов в семестре:";
+            this.groupBoxKolPre_KDR.Visible = false;
+            // 
+            // buttonSumPred_KDR
+            // 
+            this.buttonSumPred_KDR.Location = new System.Drawing.Point(11, 48);
+            this.buttonSumPred_KDR.Name = "buttonSumPred_KDR";
+            this.buttonSumPred_KDR.Size = new System.Drawing.Size(87, 23);
+            this.buttonSumPred_KDR.TabIndex = 10;
+            this.buttonSumPred_KDR.Text = "Рассчетать";
+            this.buttonSumPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonSumPred_KDR.Visible = false;
+            this.buttonSumPred_KDR.Click += new System.EventHandler(this.buttonSumPred_KDR_Click);
+            // 
+            // textBoxKolPred_KDR
+            // 
+            this.textBoxKolPred_KDR.Location = new System.Drawing.Point(11, 21);
+            this.textBoxKolPred_KDR.Name = "textBoxKolPred_KDR";
+            this.textBoxKolPred_KDR.ReadOnly = true;
+            this.textBoxKolPred_KDR.Size = new System.Drawing.Size(87, 22);
+            this.textBoxKolPred_KDR.TabIndex = 9;
+            this.textBoxKolPred_KDR.Visible = false;
+            // 
+            // buttonMinPred_KDR
+            // 
+            this.buttonMinPred_KDR.Location = new System.Drawing.Point(6, 67);
+            this.buttonMinPred_KDR.Name = "buttonMinPred_KDR";
+            this.buttonMinPred_KDR.Size = new System.Drawing.Size(131, 38);
+            this.buttonMinPred_KDR.TabIndex = 9;
+            this.buttonMinPred_KDR.Text = "Минимальное количество часов";
+            this.buttonMinPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonMinPred_KDR.Click += new System.EventHandler(this.buttonMinPred_KDR_Click);
+            // 
+            // buttonMaxPred_KDR
+            // 
+            this.buttonMaxPred_KDR.Location = new System.Drawing.Point(6, 110);
+            this.buttonMaxPred_KDR.Name = "buttonMaxPred_KDR";
+            this.buttonMaxPred_KDR.Size = new System.Drawing.Size(131, 38);
+            this.buttonMaxPred_KDR.TabIndex = 10;
+            this.buttonMaxPred_KDR.Text = "Максимальное количество часов";
+            this.buttonMaxPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonMaxPred_KDR.Click += new System.EventHandler(this.buttonMaxPred_KDR_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -627,8 +818,12 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOut_KDR)).EndInit();
             this.panelLeftButton_KDR.ResumeLayout(false);
             this.panelLeftAudi_KDR.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
+            this.panelLeftKaf_KDR.ResumeLayout(false);
+            this.panelLeftPred_KDR.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox6.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.groupBoxRed_KDR.ResumeLayout(false);
             this.groupBoxFunc_KDR.ResumeLayout(false);
             this.panelTopInfo_KDR.ResumeLayout(false);
@@ -636,10 +831,9 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelBottom_KDR.ResumeLayout(false);
             this.groupBoxKolTeach_KDR.ResumeLayout(false);
             this.groupBoxKolTeach_KDR.PerformLayout();
-            this.panelBottomAudi_KDR.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.panelFill_KDR.ResumeLayout(false);
+            this.groupBoxKolPre_KDR.ResumeLayout(false);
+            this.groupBoxKolPre_KDR.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -674,21 +868,35 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
         private System.Windows.Forms.GroupBox groupBoxKolTeach_KDR;
         private System.Windows.Forms.Button buttonSumTeacher_KDR;
         private System.Windows.Forms.Panel panelLeftAudi_KDR;
-        private System.Windows.Forms.Panel panelBottomAudi_KDR;
         private System.Windows.Forms.Button buttonChekFileAudi_KDR;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button buttonCansaleAudi_KDR;
         private System.Windows.Forms.Button buttonRedAudi_KDR;
         private System.Windows.Forms.Button buttonSaveAudi_KDR;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button buttonFuncAudi_KDR;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label labelRezAudi_KDR;
-        private System.Windows.Forms.Button buttonRezAudi_KDR;
-        private System.Windows.Forms.TextBox textBoxRezAudi_KDR;
         private System.Windows.Forms.Button buttonAddAudi_KDR;
         private System.Windows.Forms.Button buttonAddTeach_KDR;
         private System.Windows.Forms.DataGridView dataGridViewOut_KDR;
+        private System.Windows.Forms.Panel panelLeftKaf_KDR;
+        private System.Windows.Forms.Button buttonAddKaf_KDR;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button buttonCansaleKaf_KDR;
+        private System.Windows.Forms.Button buttonRedKaf_KDR;
+        private System.Windows.Forms.Button buttonSaveKaf_KDR;
+        private System.Windows.Forms.Button buttonChekFileKaf_KDR;
+        private System.Windows.Forms.Panel panelLeftPred_KDR;
+        private System.Windows.Forms.Button buttonChekFilePred_KDR;
+        private System.Windows.Forms.Button buttonAddPred_KDR;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Button buttonCansalePred_KDR;
+        private System.Windows.Forms.Button buttonRedPred_KDR;
+        private System.Windows.Forms.Button buttonSavePred_KDR;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Button buttonFuncPred_KDR;
+        private System.Windows.Forms.GroupBox groupBoxKolPre_KDR;
+        private System.Windows.Forms.Button buttonSumPred_KDR;
+        private System.Windows.Forms.TextBox textBoxKolPred_KDR;
+        private System.Windows.Forms.Button buttonMaxPred_KDR;
+        private System.Windows.Forms.Button buttonMinPred_KDR;
     }
 }
 
