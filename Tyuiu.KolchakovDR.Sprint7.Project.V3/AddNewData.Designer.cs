@@ -34,6 +34,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelTop_KDR = new System.Windows.Forms.Panel();
             this.buttonInfo_KDR = new System.Windows.Forms.Button();
             this.panelLeftTop_KDR = new System.Windows.Forms.Panel();
+            this.buttonManagement_KDR = new System.Windows.Forms.Button();
             this.panelLeft_KDR = new System.Windows.Forms.Panel();
             this.buttonLoadLesson_KDR = new System.Windows.Forms.Button();
             this.buttonLoadDepartment_KDR = new System.Windows.Forms.Button();
@@ -51,12 +52,42 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.textBoxIDTeach_KDR = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip_KDR = new System.Windows.Forms.ToolTip(this.components);
-            this.buttonManagement_KDR = new System.Windows.Forms.Button();
+            this.groupBoxAudi_KDR = new System.Windows.Forms.GroupBox();
+            this.buttonAddAudi_KDR = new System.Windows.Forms.Button();
+            this.labelNumAudi_KDR = new System.Windows.Forms.Label();
+            this.textBoxNameAudi_KDR = new System.Windows.Forms.TextBox();
+            this.labelNameAudi_KDR = new System.Windows.Forms.Label();
+            this.textBoxNumAudi_KDR = new System.Windows.Forms.TextBox();
+            this.textBoxIDAudi_KDR = new System.Windows.Forms.TextBox();
+            this.labelIDAudi_KDR = new System.Windows.Forms.Label();
+            this.groupBoxKaf_KDR = new System.Windows.Forms.GroupBox();
+            this.buttonAddKaf_KDR = new System.Windows.Forms.Button();
+            this.labelNameKaf_KDR = new System.Windows.Forms.Label();
+            this.textBoxNumZKaf_KDR = new System.Windows.Forms.TextBox();
+            this.labelNumZKaf_KDR = new System.Windows.Forms.Label();
+            this.textBoxNameKaf_KDR = new System.Windows.Forms.TextBox();
+            this.textBoxIDKaf_KDR = new System.Windows.Forms.TextBox();
+            this.labelIDKaf_KDR = new System.Windows.Forms.Label();
+            this.groupBoxPred_KDR = new System.Windows.Forms.GroupBox();
+            this.buttonAddPred_KDR = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxKolPred_KDR = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBoxNamePred_KDR = new System.Windows.Forms.TextBox();
+            this.textBoxIDPred_KDR = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxTypePred_KDR = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBoxClassPred_KDR = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panelTop_KDR.SuspendLayout();
             this.panelLeftTop_KDR.SuspendLayout();
             this.panelLeft_KDR.SuspendLayout();
             this.panelTeach_KDR.SuspendLayout();
             this.groupBoxTeach_KDR.SuspendLayout();
+            this.groupBoxAudi_KDR.SuspendLayout();
+            this.groupBoxKaf_KDR.SuspendLayout();
+            this.groupBoxPred_KDR.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop_KDR
@@ -95,6 +126,20 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelLeftTop_KDR.Size = new System.Drawing.Size(178, 50);
             this.panelLeftTop_KDR.TabIndex = 1;
             // 
+            // buttonManagement_KDR
+            // 
+            this.buttonManagement_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonManagement_KDR.BackgroundImage")));
+            this.buttonManagement_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonManagement_KDR.FlatAppearance.BorderSize = 0;
+            this.buttonManagement_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonManagement_KDR.Location = new System.Drawing.Point(0, 0);
+            this.buttonManagement_KDR.Name = "buttonManagement_KDR";
+            this.buttonManagement_KDR.Size = new System.Drawing.Size(61, 49);
+            this.buttonManagement_KDR.TabIndex = 7;
+            this.toolTip_KDR.SetToolTip(this.buttonManagement_KDR, "Руководство пользователя");
+            this.buttonManagement_KDR.UseVisualStyleBackColor = true;
+            this.buttonManagement_KDR.Click += new System.EventHandler(this.buttonManagement_KDR_Click);
+            // 
             // panelLeft_KDR
             // 
             this.panelLeft_KDR.BackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -124,6 +169,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonLoadLesson_KDR.TabIndex = 3;
             this.buttonLoadLesson_KDR.Text = "Предметы";
             this.buttonLoadLesson_KDR.UseVisualStyleBackColor = true;
+            this.buttonLoadLesson_KDR.Click += new System.EventHandler(this.buttonLoadLesson_KDR_Click);
             // 
             // buttonLoadDepartment_KDR
             // 
@@ -141,6 +187,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonLoadDepartment_KDR.TabIndex = 2;
             this.buttonLoadDepartment_KDR.Text = "Кафедры";
             this.buttonLoadDepartment_KDR.UseVisualStyleBackColor = true;
+            this.buttonLoadDepartment_KDR.Click += new System.EventHandler(this.buttonLoadDepartment_KDR_Click);
             // 
             // buttonLoadClass_KDR
             // 
@@ -158,6 +205,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonLoadClass_KDR.TabIndex = 1;
             this.buttonLoadClass_KDR.Text = "Аудитории";
             this.buttonLoadClass_KDR.UseVisualStyleBackColor = true;
+            this.buttonLoadClass_KDR.Click += new System.EventHandler(this.buttonLoadClass_KDR_Click);
             // 
             // buttonLoadTeacher_KDR
             // 
@@ -181,6 +229,9 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             // 
             // panelTeach_KDR
             // 
+            this.panelTeach_KDR.Controls.Add(this.groupBoxPred_KDR);
+            this.panelTeach_KDR.Controls.Add(this.groupBoxKaf_KDR);
+            this.panelTeach_KDR.Controls.Add(this.groupBoxAudi_KDR);
             this.panelTeach_KDR.Controls.Add(this.groupBoxTeach_KDR);
             this.panelTeach_KDR.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTeach_KDR.Location = new System.Drawing.Point(178, 50);
@@ -235,6 +286,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.textBoxWorkTeach_KDR.Size = new System.Drawing.Size(106, 20);
             this.textBoxWorkTeach_KDR.TabIndex = 7;
             this.toolTip_KDR.SetToolTip(this.textBoxWorkTeach_KDR, "Должность преподавателя");
+            this.textBoxWorkTeach_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCyrillic_KeyPress);
             // 
             // label3
             // 
@@ -253,6 +305,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.textBoxNumberTeach_KDR.Size = new System.Drawing.Size(106, 20);
             this.textBoxNumberTeach_KDR.TabIndex = 5;
             this.toolTip_KDR.SetToolTip(this.textBoxNumberTeach_KDR, "Максимум 11 символов");
+            this.textBoxNumberTeach_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKolPred_KDR_KeyPress);
             // 
             // label2
             // 
@@ -281,7 +334,6 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.textBoxIDTeach_KDR.ReadOnly = true;
             this.textBoxIDTeach_KDR.Size = new System.Drawing.Size(47, 20);
             this.textBoxIDTeach_KDR.TabIndex = 1;
-            this.textBoxIDTeach_KDR.Text = "5";
             this.toolTip_KDR.SetToolTip(this.textBoxIDTeach_KDR, "Заполняется автоматически");
             // 
             // label1
@@ -293,19 +345,299 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.label1.TabIndex = 2;
             this.label1.Text = "ID:";
             // 
-            // buttonManagement_KDR
+            // groupBoxAudi_KDR
             // 
-            this.buttonManagement_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonManagement_KDR.BackgroundImage")));
-            this.buttonManagement_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonManagement_KDR.FlatAppearance.BorderSize = 0;
-            this.buttonManagement_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonManagement_KDR.Location = new System.Drawing.Point(0, 0);
-            this.buttonManagement_KDR.Name = "buttonManagement_KDR";
-            this.buttonManagement_KDR.Size = new System.Drawing.Size(61, 49);
-            this.buttonManagement_KDR.TabIndex = 7;
-            this.toolTip_KDR.SetToolTip(this.buttonManagement_KDR, "Руководство пользователя");
-            this.buttonManagement_KDR.UseVisualStyleBackColor = true;
-            this.buttonManagement_KDR.Click += new System.EventHandler(this.buttonManagement_KDR_Click);
+            this.groupBoxAudi_KDR.Controls.Add(this.buttonAddAudi_KDR);
+            this.groupBoxAudi_KDR.Controls.Add(this.labelNumAudi_KDR);
+            this.groupBoxAudi_KDR.Controls.Add(this.textBoxNameAudi_KDR);
+            this.groupBoxAudi_KDR.Controls.Add(this.labelNameAudi_KDR);
+            this.groupBoxAudi_KDR.Controls.Add(this.textBoxNumAudi_KDR);
+            this.groupBoxAudi_KDR.Controls.Add(this.textBoxIDAudi_KDR);
+            this.groupBoxAudi_KDR.Controls.Add(this.labelIDAudi_KDR);
+            this.groupBoxAudi_KDR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxAudi_KDR.Location = new System.Drawing.Point(5, 5);
+            this.groupBoxAudi_KDR.Name = "groupBoxAudi_KDR";
+            this.groupBoxAudi_KDR.Size = new System.Drawing.Size(351, 301);
+            this.groupBoxAudi_KDR.TabIndex = 9;
+            this.groupBoxAudi_KDR.TabStop = false;
+            this.groupBoxAudi_KDR.Text = "Добавление новых данных в \"Аудитории\":";
+            this.groupBoxAudi_KDR.Visible = false;
+            // 
+            // buttonAddAudi_KDR
+            // 
+            this.buttonAddAudi_KDR.Location = new System.Drawing.Point(263, 271);
+            this.buttonAddAudi_KDR.Name = "buttonAddAudi_KDR";
+            this.buttonAddAudi_KDR.Size = new System.Drawing.Size(81, 23);
+            this.buttonAddAudi_KDR.TabIndex = 0;
+            this.buttonAddAudi_KDR.Text = "Добавить";
+            this.buttonAddAudi_KDR.UseVisualStyleBackColor = true;
+            this.buttonAddAudi_KDR.Click += new System.EventHandler(this.buttonAddAudi_KDR_Click);
+            // 
+            // labelNumAudi_KDR
+            // 
+            this.labelNumAudi_KDR.AutoSize = true;
+            this.labelNumAudi_KDR.Location = new System.Drawing.Point(26, 89);
+            this.labelNumAudi_KDR.Name = "labelNumAudi_KDR";
+            this.labelNumAudi_KDR.Size = new System.Drawing.Size(99, 13);
+            this.labelNumAudi_KDR.TabIndex = 6;
+            this.labelNumAudi_KDR.Text = "Номер аудитории:";
+            // 
+            // textBoxNameAudi_KDR
+            // 
+            this.textBoxNameAudi_KDR.Location = new System.Drawing.Point(29, 149);
+            this.textBoxNameAudi_KDR.MaxLength = 20;
+            this.textBoxNameAudi_KDR.Name = "textBoxNameAudi_KDR";
+            this.textBoxNameAudi_KDR.Size = new System.Drawing.Size(106, 20);
+            this.textBoxNameAudi_KDR.TabIndex = 5;
+            this.toolTip_KDR.SetToolTip(this.textBoxNameAudi_KDR, "Введите название аудитории");
+            this.textBoxNameAudi_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCyrillic_KeyPress);
+            // 
+            // labelNameAudi_KDR
+            // 
+            this.labelNameAudi_KDR.AutoSize = true;
+            this.labelNameAudi_KDR.Location = new System.Drawing.Point(26, 134);
+            this.labelNameAudi_KDR.Name = "labelNameAudi_KDR";
+            this.labelNameAudi_KDR.Size = new System.Drawing.Size(115, 13);
+            this.labelNameAudi_KDR.TabIndex = 4;
+            this.labelNameAudi_KDR.Text = "Название аудитории:";
+            // 
+            // textBoxNumAudi_KDR
+            // 
+            this.textBoxNumAudi_KDR.Location = new System.Drawing.Point(29, 105);
+            this.textBoxNumAudi_KDR.MaxLength = 4;
+            this.textBoxNumAudi_KDR.Name = "textBoxNumAudi_KDR";
+            this.textBoxNumAudi_KDR.Size = new System.Drawing.Size(112, 20);
+            this.textBoxNumAudi_KDR.TabIndex = 3;
+            this.toolTip_KDR.SetToolTip(this.textBoxNumAudi_KDR, "Введите номер аудитории");
+            this.textBoxNumAudi_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKolPred_KDR_KeyPress);
+            // 
+            // textBoxIDAudi_KDR
+            // 
+            this.textBoxIDAudi_KDR.Location = new System.Drawing.Point(29, 56);
+            this.textBoxIDAudi_KDR.Name = "textBoxIDAudi_KDR";
+            this.textBoxIDAudi_KDR.ReadOnly = true;
+            this.textBoxIDAudi_KDR.Size = new System.Drawing.Size(47, 20);
+            this.textBoxIDAudi_KDR.TabIndex = 1;
+            this.toolTip_KDR.SetToolTip(this.textBoxIDAudi_KDR, "Заполняется автоматически");
+            // 
+            // labelIDAudi_KDR
+            // 
+            this.labelIDAudi_KDR.AutoSize = true;
+            this.labelIDAudi_KDR.Location = new System.Drawing.Point(26, 40);
+            this.labelIDAudi_KDR.Name = "labelIDAudi_KDR";
+            this.labelIDAudi_KDR.Size = new System.Drawing.Size(21, 13);
+            this.labelIDAudi_KDR.TabIndex = 2;
+            this.labelIDAudi_KDR.Text = "ID:";
+            // 
+            // groupBoxKaf_KDR
+            // 
+            this.groupBoxKaf_KDR.Controls.Add(this.buttonAddKaf_KDR);
+            this.groupBoxKaf_KDR.Controls.Add(this.labelNameKaf_KDR);
+            this.groupBoxKaf_KDR.Controls.Add(this.textBoxNumZKaf_KDR);
+            this.groupBoxKaf_KDR.Controls.Add(this.labelNumZKaf_KDR);
+            this.groupBoxKaf_KDR.Controls.Add(this.textBoxNameKaf_KDR);
+            this.groupBoxKaf_KDR.Controls.Add(this.textBoxIDKaf_KDR);
+            this.groupBoxKaf_KDR.Controls.Add(this.labelIDKaf_KDR);
+            this.groupBoxKaf_KDR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxKaf_KDR.Location = new System.Drawing.Point(5, 5);
+            this.groupBoxKaf_KDR.Name = "groupBoxKaf_KDR";
+            this.groupBoxKaf_KDR.Size = new System.Drawing.Size(351, 301);
+            this.groupBoxKaf_KDR.TabIndex = 10;
+            this.groupBoxKaf_KDR.TabStop = false;
+            this.groupBoxKaf_KDR.Text = "Добавление новых данных в \"Кафедры\":";
+            this.groupBoxKaf_KDR.Visible = false;
+            // 
+            // buttonAddKaf_KDR
+            // 
+            this.buttonAddKaf_KDR.Location = new System.Drawing.Point(263, 271);
+            this.buttonAddKaf_KDR.Name = "buttonAddKaf_KDR";
+            this.buttonAddKaf_KDR.Size = new System.Drawing.Size(81, 23);
+            this.buttonAddKaf_KDR.TabIndex = 0;
+            this.buttonAddKaf_KDR.Text = "Добавить";
+            this.buttonAddKaf_KDR.UseVisualStyleBackColor = true;
+            this.buttonAddKaf_KDR.Click += new System.EventHandler(this.buttonAddKaf_KDR_Click);
+            // 
+            // labelNameKaf_KDR
+            // 
+            this.labelNameKaf_KDR.AutoSize = true;
+            this.labelNameKaf_KDR.Location = new System.Drawing.Point(26, 89);
+            this.labelNameKaf_KDR.Name = "labelNameKaf_KDR";
+            this.labelNameKaf_KDR.Size = new System.Drawing.Size(109, 13);
+            this.labelNameKaf_KDR.TabIndex = 6;
+            this.labelNameKaf_KDR.Text = "Название кафедры:";
+            // 
+            // textBoxNumZKaf_KDR
+            // 
+            this.textBoxNumZKaf_KDR.Location = new System.Drawing.Point(29, 149);
+            this.textBoxNumZKaf_KDR.MaxLength = 11;
+            this.textBoxNumZKaf_KDR.Name = "textBoxNumZKaf_KDR";
+            this.textBoxNumZKaf_KDR.Size = new System.Drawing.Size(130, 20);
+            this.textBoxNumZKaf_KDR.TabIndex = 5;
+            this.toolTip_KDR.SetToolTip(this.textBoxNumZKaf_KDR, "Введите номер заведующего кафедры");
+            this.textBoxNumZKaf_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKolPred_KDR_KeyPress);
+            // 
+            // labelNumZKaf_KDR
+            // 
+            this.labelNumZKaf_KDR.AutoSize = true;
+            this.labelNumZKaf_KDR.Location = new System.Drawing.Point(26, 134);
+            this.labelNumZKaf_KDR.Name = "labelNumZKaf_KDR";
+            this.labelNumZKaf_KDR.Size = new System.Drawing.Size(117, 13);
+            this.labelNumZKaf_KDR.TabIndex = 4;
+            this.labelNumZKaf_KDR.Text = "Номер зав. кафедры:";
+            // 
+            // textBoxNameKaf_KDR
+            // 
+            this.textBoxNameKaf_KDR.Location = new System.Drawing.Point(29, 105);
+            this.textBoxNameKaf_KDR.MaxLength = 5;
+            this.textBoxNameKaf_KDR.Name = "textBoxNameKaf_KDR";
+            this.textBoxNameKaf_KDR.Size = new System.Drawing.Size(112, 20);
+            this.textBoxNameKaf_KDR.TabIndex = 3;
+            this.toolTip_KDR.SetToolTip(this.textBoxNameKaf_KDR, "Введите название кафедры");
+            this.textBoxNameKaf_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCyrillic_KeyPress);
+            // 
+            // textBoxIDKaf_KDR
+            // 
+            this.textBoxIDKaf_KDR.Location = new System.Drawing.Point(29, 56);
+            this.textBoxIDKaf_KDR.Name = "textBoxIDKaf_KDR";
+            this.textBoxIDKaf_KDR.ReadOnly = true;
+            this.textBoxIDKaf_KDR.Size = new System.Drawing.Size(47, 20);
+            this.textBoxIDKaf_KDR.TabIndex = 1;
+            this.toolTip_KDR.SetToolTip(this.textBoxIDKaf_KDR, "Заполняется автоматически");
+            // 
+            // labelIDKaf_KDR
+            // 
+            this.labelIDKaf_KDR.AutoSize = true;
+            this.labelIDKaf_KDR.Location = new System.Drawing.Point(26, 40);
+            this.labelIDKaf_KDR.Name = "labelIDKaf_KDR";
+            this.labelIDKaf_KDR.Size = new System.Drawing.Size(21, 13);
+            this.labelIDKaf_KDR.TabIndex = 2;
+            this.labelIDKaf_KDR.Text = "ID:";
+            // 
+            // groupBoxPred_KDR
+            // 
+            this.groupBoxPred_KDR.Controls.Add(this.textBoxClassPred_KDR);
+            this.groupBoxPred_KDR.Controls.Add(this.label9);
+            this.groupBoxPred_KDR.Controls.Add(this.textBoxTypePred_KDR);
+            this.groupBoxPred_KDR.Controls.Add(this.label8);
+            this.groupBoxPred_KDR.Controls.Add(this.buttonAddPred_KDR);
+            this.groupBoxPred_KDR.Controls.Add(this.label5);
+            this.groupBoxPred_KDR.Controls.Add(this.textBoxKolPred_KDR);
+            this.groupBoxPred_KDR.Controls.Add(this.label6);
+            this.groupBoxPred_KDR.Controls.Add(this.textBoxNamePred_KDR);
+            this.groupBoxPred_KDR.Controls.Add(this.textBoxIDPred_KDR);
+            this.groupBoxPred_KDR.Controls.Add(this.label7);
+            this.groupBoxPred_KDR.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxPred_KDR.Location = new System.Drawing.Point(5, 5);
+            this.groupBoxPred_KDR.Name = "groupBoxPred_KDR";
+            this.groupBoxPred_KDR.Size = new System.Drawing.Size(351, 301);
+            this.groupBoxPred_KDR.TabIndex = 11;
+            this.groupBoxPred_KDR.TabStop = false;
+            this.groupBoxPred_KDR.Text = "Добавление новых данных в \"Предметы\":";
+            this.groupBoxPred_KDR.Visible = false;
+            // 
+            // buttonAddPred_KDR
+            // 
+            this.buttonAddPred_KDR.Location = new System.Drawing.Point(263, 271);
+            this.buttonAddPred_KDR.Name = "buttonAddPred_KDR";
+            this.buttonAddPred_KDR.Size = new System.Drawing.Size(81, 23);
+            this.buttonAddPred_KDR.TabIndex = 0;
+            this.buttonAddPred_KDR.Text = "Добавить";
+            this.buttonAddPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonAddPred_KDR.Click += new System.EventHandler(this.buttonAddPred_KDR_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(26, 89);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Название предмета:";
+            // 
+            // textBoxKolPred_KDR
+            // 
+            this.textBoxKolPred_KDR.Location = new System.Drawing.Point(29, 149);
+            this.textBoxKolPred_KDR.MaxLength = 3;
+            this.textBoxKolPred_KDR.Name = "textBoxKolPred_KDR";
+            this.textBoxKolPred_KDR.Size = new System.Drawing.Size(134, 20);
+            this.textBoxKolPred_KDR.TabIndex = 5;
+            this.toolTip_KDR.SetToolTip(this.textBoxKolPred_KDR, "Введите количетсво часов в семетре (максимум 3 символа)");
+            this.textBoxKolPred_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxKolPred_KDR_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(26, 134);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(137, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Кол-во часов за семестр:";
+            // 
+            // textBoxNamePred_KDR
+            // 
+            this.textBoxNamePred_KDR.Location = new System.Drawing.Point(29, 105);
+            this.textBoxNamePred_KDR.MaxLength = 25;
+            this.textBoxNamePred_KDR.Name = "textBoxNamePred_KDR";
+            this.textBoxNamePred_KDR.Size = new System.Drawing.Size(112, 20);
+            this.textBoxNamePred_KDR.TabIndex = 3;
+            this.toolTip_KDR.SetToolTip(this.textBoxNamePred_KDR, "Введите название предмета");
+            this.textBoxNamePred_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCyrillic_KeyPress);
+            // 
+            // textBoxIDPred_KDR
+            // 
+            this.textBoxIDPred_KDR.Location = new System.Drawing.Point(29, 56);
+            this.textBoxIDPred_KDR.Name = "textBoxIDPred_KDR";
+            this.textBoxIDPred_KDR.ReadOnly = true;
+            this.textBoxIDPred_KDR.Size = new System.Drawing.Size(47, 20);
+            this.textBoxIDPred_KDR.TabIndex = 1;
+            this.toolTip_KDR.SetToolTip(this.textBoxIDPred_KDR, "Заполняется автоматически");
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(26, 40);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(21, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "ID:";
+            // 
+            // textBoxTypePred_KDR
+            // 
+            this.textBoxTypePred_KDR.Location = new System.Drawing.Point(29, 198);
+            this.textBoxTypePred_KDR.MaxLength = 7;
+            this.textBoxTypePred_KDR.Name = "textBoxTypePred_KDR";
+            this.textBoxTypePred_KDR.Size = new System.Drawing.Size(134, 20);
+            this.textBoxTypePred_KDR.TabIndex = 8;
+            this.toolTip_KDR.SetToolTip(this.textBoxTypePred_KDR, "Введите тип контроля: Экзамен или Зачёт");
+            this.textBoxTypePred_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCyrillic_KeyPress);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(26, 183);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 13);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Тип контроля:";
+            // 
+            // textBoxClassPred_KDR
+            // 
+            this.textBoxClassPred_KDR.Location = new System.Drawing.Point(29, 242);
+            this.textBoxClassPred_KDR.MaxLength = 20;
+            this.textBoxClassPred_KDR.Name = "textBoxClassPred_KDR";
+            this.textBoxClassPred_KDR.Size = new System.Drawing.Size(134, 20);
+            this.textBoxClassPred_KDR.TabIndex = 10;
+            this.toolTip_KDR.SetToolTip(this.textBoxClassPred_KDR, "Введите раздел предмета (пример: Математический)");
+            this.textBoxClassPred_KDR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxCyrillic_KeyPress);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(26, 227);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(99, 13);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Раздел предмета:";
             // 
             // AddNewData
             // 
@@ -328,6 +660,12 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelTeach_KDR.ResumeLayout(false);
             this.groupBoxTeach_KDR.ResumeLayout(false);
             this.groupBoxTeach_KDR.PerformLayout();
+            this.groupBoxAudi_KDR.ResumeLayout(false);
+            this.groupBoxAudi_KDR.PerformLayout();
+            this.groupBoxKaf_KDR.ResumeLayout(false);
+            this.groupBoxKaf_KDR.PerformLayout();
+            this.groupBoxPred_KDR.ResumeLayout(false);
+            this.groupBoxPred_KDR.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -355,5 +693,33 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolTip toolTip_KDR;
         private System.Windows.Forms.Button buttonManagement_KDR;
+        private System.Windows.Forms.GroupBox groupBoxAudi_KDR;
+        private System.Windows.Forms.Button buttonAddAudi_KDR;
+        private System.Windows.Forms.Label labelNumAudi_KDR;
+        private System.Windows.Forms.TextBox textBoxNameAudi_KDR;
+        private System.Windows.Forms.Label labelNameAudi_KDR;
+        private System.Windows.Forms.TextBox textBoxNumAudi_KDR;
+        private System.Windows.Forms.TextBox textBoxIDAudi_KDR;
+        private System.Windows.Forms.Label labelIDAudi_KDR;
+        private System.Windows.Forms.GroupBox groupBoxKaf_KDR;
+        private System.Windows.Forms.Button buttonAddKaf_KDR;
+        private System.Windows.Forms.Label labelNameKaf_KDR;
+        private System.Windows.Forms.TextBox textBoxNumZKaf_KDR;
+        private System.Windows.Forms.Label labelNumZKaf_KDR;
+        private System.Windows.Forms.TextBox textBoxNameKaf_KDR;
+        private System.Windows.Forms.TextBox textBoxIDKaf_KDR;
+        private System.Windows.Forms.Label labelIDKaf_KDR;
+        private System.Windows.Forms.GroupBox groupBoxPred_KDR;
+        private System.Windows.Forms.Button buttonAddPred_KDR;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxKolPred_KDR;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBoxNamePred_KDR;
+        private System.Windows.Forms.TextBox textBoxIDPred_KDR;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxClassPred_KDR;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBoxTypePred_KDR;
+        private System.Windows.Forms.Label label8;
     }
 }

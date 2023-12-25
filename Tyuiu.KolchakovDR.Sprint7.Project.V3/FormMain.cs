@@ -180,6 +180,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             buttonSaveTeachers_KDR.Visible = true;
             buttonRed_KDR.Visible = false;
             buttonCansel_KDR.Visible = true;
+            //buttonLoadTeacher_KDR.PerformClick();
         }
         private void buttonCansel_KDR_Click(object sender, EventArgs e)
         {
@@ -321,6 +322,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             buttonSaveAudi_KDR.Visible = true;
             dataGridViewOut_KDR.ReadOnly = false;
             buttonCansaleAudi_KDR.Visible = true;
+            buttonLoadClass_KDR.PerformClick();
         }
         private void buttonAddAudi_KDR_Click(object sender, EventArgs e)
         {
@@ -397,6 +399,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             buttonSaveKaf_KDR.Visible = true;
             dataGridViewOut_KDR.ReadOnly = false;
             buttonCansaleKaf_KDR.Visible = true;
+            buttonLoadDepartment_KDR.PerformClick();
         }
         private void buttonSaveKaf_KDR_Click(object sender, EventArgs e)
         {
@@ -527,6 +530,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             buttonSavePred_KDR.Visible = true;
             dataGridViewOut_KDR.ReadOnly = false;
             buttonCansalePred_KDR.Visible = true;
+            buttonLoadLesson_KDR.PerformClick();
         }
         private void buttonSavePred_KDR_Click(object sender, EventArgs e)
         {
