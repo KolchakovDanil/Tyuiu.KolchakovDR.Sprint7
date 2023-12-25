@@ -161,6 +161,30 @@
   <metadata name="toolTip_KDR.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="buttonManagement_KDR.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAEDElEQVRYR7WXy3NTZRjGWejS
+        0Q3+G44zKiqld7qXXoQqWKTSFluNCDakQJtacIObbmQjC1xY2pTmQk4SG5qKFkGwYykjxREFczlJml6T
+        3js+Pm8q4Gh6kjknZOaZszjf+3t+35czJ5MtANLh56lSq/tSkdWDwg4Piju9vCooOOnG9jxEOMKVDumS
+        wnTvvwSekQV3F4C7KWCbxYU7yb8wPrPOrOG2gci8cCaSSEtIVyaBrQXtbtyaXseJkQRearXj58QazIEo
+        LMPGI5yxqXVIh3RlEnhejml0cg2WK3G8bLbjZmwFrUMRHAswctURS0BlImnOaHw1/VVIV2YB2v0YW4WZ
+        Aq+YHbimLuPIZZWJ4INvwnjfx3hDuYVrZeYoZ1uHhKHienTl4QlkFtjBm1fVVXwyHMe2Yw58H17GR4Mq
+        mr1hLtH3aeHsUb+Kw+SMRFYgHZoC34ZXcDiwIRAILnEXKpoU/QJNnnB6Ex+SMxxc1hYobFfg/3MJJn8M
+        r1Jg8P4idx/BISWEffYgdvc/wJs5RtbKjMyafPwKyfE/WIR0aAp47y+hZTCG1ywOKL8vcgcRNLj1n0AD
+        T69FNkGO548cBFz3FvkAbQg4f1tAozuCJqbeGcJ+Rwh1OUbWyswhzjYrGwzXvQVtgSK++fp/Zak3itcp
+        YJtI4eClMCX0R54fiXBsfMNJh6ZAz8QCDipRbG9zoOeXFHcRRoNIGIjMC6fnTg4CX91O4YA7igIKnB+f
+        51Fy2BXGewYi88I5P57UFii2Kjh3K4X9Lgocd+DLsXnUDYTxLocPGIjMC+fcWBLSsalACW+eHU1in1PF
+        juNOfPHTHPYOhPCOnQ+Wgci8cM6OzkM6NAW6b87hbbuKwhNOdN+YxVv9HL7I94CByLxwum/MZRf4/Poc
+        9gyoKKLAmR9msdsWQi2HBaA3Mi+cM9eyCJR2Kvjs6izfZFEUnXTi9MgManpD2NNnPMI5TbZ0aApYv5tB
+        lS2CYgp0XJlG5YUgqnuDBOiPzAvHSp6mQBlvtgWmsatXRQkF2oam8MbXHGaqevRH5oUjPOnQFDAP/SPQ
+        7kTr5SnsMlj+MMIRnqZAOW8e8U+hkgKlFPh4MJFXAeFJh6aAyfdYwOSlQAaYngjH5Msm8KnCn87JRwLN
+        nnheBZrJlg5NgUZlElV9Ksoo0OCOo/I/IL0RTqM7i8BO3qx3xR8J1DtjeRUQtnRoCtQ5HwvUOfIrIOws
+        Ah7stcdQ3RdFeYeLPyBRVF0IEZCHkCNs6dhUoKLLi1pHAjUXadrpRq19EtW2KGp4IkYjnFp7AtKxmcDW
+        cqsrWHHKm15UccqXvu7s8uQtaW6XJ7mZwLPMC0wJU/aEUsq8yDzH/E/gaUYk5I+jGD6pSLl0sRdb/gbe
+        ZzwPa4EReQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="buttonOpenFile_KDR.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
@@ -239,9 +263,6 @@
         QmCC
 </value>
   </data>
-  <metadata name="toolTip_KDR.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="buttonLoadLesson_KDR.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m

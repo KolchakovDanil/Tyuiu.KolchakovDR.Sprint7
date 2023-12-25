@@ -34,7 +34,6 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelTop_KDR = new System.Windows.Forms.Panel();
             this.buttonInfo_KDR = new System.Windows.Forms.Button();
             this.panelLeftTop_KDR = new System.Windows.Forms.Panel();
-            this.buttonOpenFile_KDR = new System.Windows.Forms.Button();
             this.panelLeft_KDR = new System.Windows.Forms.Panel();
             this.buttonLoadLesson_KDR = new System.Windows.Forms.Button();
             this.buttonLoadDepartment_KDR = new System.Windows.Forms.Button();
@@ -52,6 +51,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.textBoxIDTeach_KDR = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.toolTip_KDR = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonManagement_KDR = new System.Windows.Forms.Button();
             this.panelTop_KDR.SuspendLayout();
             this.panelLeftTop_KDR.SuspendLayout();
             this.panelLeft_KDR.SuspendLayout();
@@ -83,30 +83,17 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonInfo_KDR.TabIndex = 6;
             this.toolTip_KDR.SetToolTip(this.buttonInfo_KDR, "О программе");
             this.buttonInfo_KDR.UseVisualStyleBackColor = true;
+            this.buttonInfo_KDR.Click += new System.EventHandler(this.buttonInfo_KDR_Click);
             // 
             // panelLeftTop_KDR
             // 
             this.panelLeftTop_KDR.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panelLeftTop_KDR.Controls.Add(this.buttonOpenFile_KDR);
+            this.panelLeftTop_KDR.Controls.Add(this.buttonManagement_KDR);
             this.panelLeftTop_KDR.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeftTop_KDR.Location = new System.Drawing.Point(0, 0);
             this.panelLeftTop_KDR.Name = "panelLeftTop_KDR";
             this.panelLeftTop_KDR.Size = new System.Drawing.Size(178, 50);
             this.panelLeftTop_KDR.TabIndex = 1;
-            // 
-            // buttonOpenFile_KDR
-            // 
-            this.buttonOpenFile_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOpenFile_KDR.BackgroundImage")));
-            this.buttonOpenFile_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonOpenFile_KDR.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonOpenFile_KDR.FlatAppearance.BorderSize = 0;
-            this.buttonOpenFile_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOpenFile_KDR.Location = new System.Drawing.Point(5, 3);
-            this.buttonOpenFile_KDR.Name = "buttonOpenFile_KDR";
-            this.buttonOpenFile_KDR.Size = new System.Drawing.Size(54, 44);
-            this.buttonOpenFile_KDR.TabIndex = 4;
-            this.toolTip_KDR.SetToolTip(this.buttonOpenFile_KDR, "Открыть папку с файлами");
-            this.buttonOpenFile_KDR.UseVisualStyleBackColor = true;
             // 
             // panelLeft_KDR
             // 
@@ -190,6 +177,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonLoadTeacher_KDR.TabIndex = 0;
             this.buttonLoadTeacher_KDR.Text = "Преподаватели";
             this.buttonLoadTeacher_KDR.UseVisualStyleBackColor = false;
+            this.buttonLoadTeacher_KDR.Click += new System.EventHandler(this.buttonLoadTeacher_KDR_Click);
             // 
             // panelTeach_KDR
             // 
@@ -305,6 +293,20 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.label1.TabIndex = 2;
             this.label1.Text = "ID:";
             // 
+            // buttonManagement_KDR
+            // 
+            this.buttonManagement_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonManagement_KDR.BackgroundImage")));
+            this.buttonManagement_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonManagement_KDR.FlatAppearance.BorderSize = 0;
+            this.buttonManagement_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonManagement_KDR.Location = new System.Drawing.Point(0, 0);
+            this.buttonManagement_KDR.Name = "buttonManagement_KDR";
+            this.buttonManagement_KDR.Size = new System.Drawing.Size(61, 49);
+            this.buttonManagement_KDR.TabIndex = 7;
+            this.toolTip_KDR.SetToolTip(this.buttonManagement_KDR, "Руководство пользователя");
+            this.buttonManagement_KDR.UseVisualStyleBackColor = true;
+            this.buttonManagement_KDR.Click += new System.EventHandler(this.buttonManagement_KDR_Click);
+            // 
             // AddNewData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -335,7 +337,6 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
         private System.Windows.Forms.Panel panelTop_KDR;
         private System.Windows.Forms.Button buttonInfo_KDR;
         private System.Windows.Forms.Panel panelLeftTop_KDR;
-        private System.Windows.Forms.Button buttonOpenFile_KDR;
         private System.Windows.Forms.Panel panelLeft_KDR;
         private System.Windows.Forms.Button buttonLoadLesson_KDR;
         private System.Windows.Forms.Button buttonLoadDepartment_KDR;
@@ -353,5 +354,6 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
         private System.Windows.Forms.TextBox textBoxWorkTeach_KDR;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ToolTip toolTip_KDR;
+        private System.Windows.Forms.Button buttonManagement_KDR;
     }
 }

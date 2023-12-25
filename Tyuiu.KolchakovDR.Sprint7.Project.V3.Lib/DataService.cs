@@ -92,16 +92,15 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3.Lib
             add = true;
             return add;
         }
-        public int GetAllHours(string[,] matrix)
+        public int[] GetAllHours(string[,] matrix)
         {
             int [] HouesArray = new int [matrix.GetLength(0)];
-            int res = 0;
+
             for (int i = 0; i < HouesArray.Length; i++)
             {
                 HouesArray[i] = Convert.ToInt32(matrix[i, 2]);
-                res += HouesArray[i];
             }
-            return res;
+            return HouesArray;
         }
         public int MinValue(int[] arrayNumber)
         {

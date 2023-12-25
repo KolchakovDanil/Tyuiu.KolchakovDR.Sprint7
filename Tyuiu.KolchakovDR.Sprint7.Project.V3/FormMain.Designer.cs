@@ -54,6 +54,8 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonRedPred_KDR = new System.Windows.Forms.Button();
             this.buttonSavePred_KDR = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.buttonMaxPred_KDR = new System.Windows.Forms.Button();
+            this.buttonMinPred_KDR = new System.Windows.Forms.Button();
             this.buttonFuncPred_KDR = new System.Windows.Forms.Button();
             this.buttonAddKaf_KDR = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -78,16 +80,15 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelTopInfo_KDR = new System.Windows.Forms.Panel();
             this.panelBottom_KDR = new System.Windows.Forms.Panel();
             this.groupBoxKolTeach_KDR = new System.Windows.Forms.GroupBox();
+            this.groupBoxKolPre_KDR = new System.Windows.Forms.GroupBox();
+            this.buttonSumPred_KDR = new System.Windows.Forms.Button();
+            this.textBoxKolPred_KDR = new System.Windows.Forms.TextBox();
             this.buttonSumTeacher_KDR = new System.Windows.Forms.Button();
             this.textBoxSum_KDR = new System.Windows.Forms.TextBox();
             this.panelRightFill_KDR = new System.Windows.Forms.Panel();
             this.panelFill_KDR = new System.Windows.Forms.Panel();
             this.toolTip_KDR = new System.Windows.Forms.ToolTip(this.components);
-            this.groupBoxKolPre_KDR = new System.Windows.Forms.GroupBox();
-            this.buttonSumPred_KDR = new System.Windows.Forms.Button();
-            this.textBoxKolPred_KDR = new System.Windows.Forms.TextBox();
-            this.buttonMinPred_KDR = new System.Windows.Forms.Button();
-            this.buttonMaxPred_KDR = new System.Windows.Forms.Button();
+            this.buttonManagement_KDR = new System.Windows.Forms.Button();
             this.panelTop_KDR.SuspendLayout();
             this.panelLeftTop_KDR.SuspendLayout();
             this.panelLeft_KDR.SuspendLayout();
@@ -105,8 +106,8 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelTopInfo_KDR.SuspendLayout();
             this.panelBottom_KDR.SuspendLayout();
             this.groupBoxKolTeach_KDR.SuspendLayout();
-            this.panelFill_KDR.SuspendLayout();
             this.groupBoxKolPre_KDR.SuspendLayout();
+            this.panelFill_KDR.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTop_KDR
@@ -131,11 +132,14 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonInfo_KDR.Name = "buttonInfo_KDR";
             this.buttonInfo_KDR.Size = new System.Drawing.Size(70, 68);
             this.buttonInfo_KDR.TabIndex = 6;
+            this.toolTip_KDR.SetToolTip(this.buttonInfo_KDR, "О программе");
             this.buttonInfo_KDR.UseVisualStyleBackColor = true;
+            this.buttonInfo_KDR.Click += new System.EventHandler(this.buttonInfo_KDR_Click);
             // 
             // panelLeftTop_KDR
             // 
             this.panelLeftTop_KDR.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelLeftTop_KDR.Controls.Add(this.buttonManagement_KDR);
             this.panelLeftTop_KDR.Controls.Add(this.buttonOpenFile_KDR);
             this.panelLeftTop_KDR.Controls.Add(this.buttonGraphTech_KDR);
             this.panelLeftTop_KDR.Dock = System.Windows.Forms.DockStyle.Left;
@@ -418,6 +422,26 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.groupBox6.TabIndex = 14;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Функции:";
+            // 
+            // buttonMaxPred_KDR
+            // 
+            this.buttonMaxPred_KDR.Location = new System.Drawing.Point(6, 110);
+            this.buttonMaxPred_KDR.Name = "buttonMaxPred_KDR";
+            this.buttonMaxPred_KDR.Size = new System.Drawing.Size(131, 38);
+            this.buttonMaxPred_KDR.TabIndex = 10;
+            this.buttonMaxPred_KDR.Text = "Максимальное количество часов";
+            this.buttonMaxPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonMaxPred_KDR.Click += new System.EventHandler(this.buttonMaxPred_KDR_Click);
+            // 
+            // buttonMinPred_KDR
+            // 
+            this.buttonMinPred_KDR.Location = new System.Drawing.Point(6, 67);
+            this.buttonMinPred_KDR.Name = "buttonMinPred_KDR";
+            this.buttonMinPred_KDR.Size = new System.Drawing.Size(131, 38);
+            this.buttonMinPred_KDR.TabIndex = 9;
+            this.buttonMinPred_KDR.Text = "Минимальное количество часов";
+            this.buttonMinPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonMinPred_KDR.Click += new System.EventHandler(this.buttonMinPred_KDR_Click);
             // 
             // buttonFuncPred_KDR
             // 
@@ -705,6 +729,38 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.groupBoxKolTeach_KDR.Text = "Рассчёт количества преподавателей:";
             this.groupBoxKolTeach_KDR.Visible = false;
             // 
+            // groupBoxKolPre_KDR
+            // 
+            this.groupBoxKolPre_KDR.Controls.Add(this.buttonSumPred_KDR);
+            this.groupBoxKolPre_KDR.Controls.Add(this.textBoxKolPred_KDR);
+            this.groupBoxKolPre_KDR.Location = new System.Drawing.Point(3, 0);
+            this.groupBoxKolPre_KDR.Name = "groupBoxKolPre_KDR";
+            this.groupBoxKolPre_KDR.Size = new System.Drawing.Size(551, 80);
+            this.groupBoxKolPre_KDR.TabIndex = 12;
+            this.groupBoxKolPre_KDR.TabStop = false;
+            this.groupBoxKolPre_KDR.Text = "Общее количество учебных часов в семестре:";
+            this.groupBoxKolPre_KDR.Visible = false;
+            // 
+            // buttonSumPred_KDR
+            // 
+            this.buttonSumPred_KDR.Location = new System.Drawing.Point(11, 48);
+            this.buttonSumPred_KDR.Name = "buttonSumPred_KDR";
+            this.buttonSumPred_KDR.Size = new System.Drawing.Size(87, 23);
+            this.buttonSumPred_KDR.TabIndex = 10;
+            this.buttonSumPred_KDR.Text = "Рассчетать";
+            this.buttonSumPred_KDR.UseVisualStyleBackColor = true;
+            this.buttonSumPred_KDR.Visible = false;
+            this.buttonSumPred_KDR.Click += new System.EventHandler(this.buttonSumPred_KDR_Click);
+            // 
+            // textBoxKolPred_KDR
+            // 
+            this.textBoxKolPred_KDR.Location = new System.Drawing.Point(11, 21);
+            this.textBoxKolPred_KDR.Name = "textBoxKolPred_KDR";
+            this.textBoxKolPred_KDR.ReadOnly = true;
+            this.textBoxKolPred_KDR.Size = new System.Drawing.Size(87, 22);
+            this.textBoxKolPred_KDR.TabIndex = 9;
+            this.textBoxKolPred_KDR.Visible = false;
+            // 
             // buttonSumTeacher_KDR
             // 
             this.buttonSumTeacher_KDR.Location = new System.Drawing.Point(11, 49);
@@ -743,57 +799,19 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelFill_KDR.Size = new System.Drawing.Size(536, 292);
             this.panelFill_KDR.TabIndex = 11;
             // 
-            // groupBoxKolPre_KDR
+            // buttonManagement_KDR
             // 
-            this.groupBoxKolPre_KDR.Controls.Add(this.buttonSumPred_KDR);
-            this.groupBoxKolPre_KDR.Controls.Add(this.textBoxKolPred_KDR);
-            this.groupBoxKolPre_KDR.Location = new System.Drawing.Point(3, 0);
-            this.groupBoxKolPre_KDR.Name = "groupBoxKolPre_KDR";
-            this.groupBoxKolPre_KDR.Size = new System.Drawing.Size(551, 80);
-            this.groupBoxKolPre_KDR.TabIndex = 12;
-            this.groupBoxKolPre_KDR.TabStop = false;
-            this.groupBoxKolPre_KDR.Text = "Общее количество учебных часов в семестре:";
-            this.groupBoxKolPre_KDR.Visible = false;
-            // 
-            // buttonSumPred_KDR
-            // 
-            this.buttonSumPred_KDR.Location = new System.Drawing.Point(11, 48);
-            this.buttonSumPred_KDR.Name = "buttonSumPred_KDR";
-            this.buttonSumPred_KDR.Size = new System.Drawing.Size(87, 23);
-            this.buttonSumPred_KDR.TabIndex = 10;
-            this.buttonSumPred_KDR.Text = "Рассчетать";
-            this.buttonSumPred_KDR.UseVisualStyleBackColor = true;
-            this.buttonSumPred_KDR.Visible = false;
-            this.buttonSumPred_KDR.Click += new System.EventHandler(this.buttonSumPred_KDR_Click);
-            // 
-            // textBoxKolPred_KDR
-            // 
-            this.textBoxKolPred_KDR.Location = new System.Drawing.Point(11, 21);
-            this.textBoxKolPred_KDR.Name = "textBoxKolPred_KDR";
-            this.textBoxKolPred_KDR.ReadOnly = true;
-            this.textBoxKolPred_KDR.Size = new System.Drawing.Size(87, 22);
-            this.textBoxKolPred_KDR.TabIndex = 9;
-            this.textBoxKolPred_KDR.Visible = false;
-            // 
-            // buttonMinPred_KDR
-            // 
-            this.buttonMinPred_KDR.Location = new System.Drawing.Point(6, 67);
-            this.buttonMinPred_KDR.Name = "buttonMinPred_KDR";
-            this.buttonMinPred_KDR.Size = new System.Drawing.Size(131, 38);
-            this.buttonMinPred_KDR.TabIndex = 9;
-            this.buttonMinPred_KDR.Text = "Минимальное количество часов";
-            this.buttonMinPred_KDR.UseVisualStyleBackColor = true;
-            this.buttonMinPred_KDR.Click += new System.EventHandler(this.buttonMinPred_KDR_Click);
-            // 
-            // buttonMaxPred_KDR
-            // 
-            this.buttonMaxPred_KDR.Location = new System.Drawing.Point(6, 110);
-            this.buttonMaxPred_KDR.Name = "buttonMaxPred_KDR";
-            this.buttonMaxPred_KDR.Size = new System.Drawing.Size(131, 38);
-            this.buttonMaxPred_KDR.TabIndex = 10;
-            this.buttonMaxPred_KDR.Text = "Максимальное количество часов";
-            this.buttonMaxPred_KDR.UseVisualStyleBackColor = true;
-            this.buttonMaxPred_KDR.Click += new System.EventHandler(this.buttonMaxPred_KDR_Click);
+            this.buttonManagement_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonManagement_KDR.BackgroundImage")));
+            this.buttonManagement_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonManagement_KDR.FlatAppearance.BorderSize = 0;
+            this.buttonManagement_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonManagement_KDR.Location = new System.Drawing.Point(135, 10);
+            this.buttonManagement_KDR.Name = "buttonManagement_KDR";
+            this.buttonManagement_KDR.Size = new System.Drawing.Size(61, 49);
+            this.buttonManagement_KDR.TabIndex = 6;
+            this.toolTip_KDR.SetToolTip(this.buttonManagement_KDR, "Руководство пользователя");
+            this.buttonManagement_KDR.UseVisualStyleBackColor = true;
+            this.buttonManagement_KDR.Click += new System.EventHandler(this.buttonManagement_KDR_Click);
             // 
             // FormMain
             // 
@@ -811,7 +829,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.MinimumSize = new System.Drawing.Size(925, 540);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Главное меню";
+            this.Text = "Главное меню приложения \"Университет\"";
             this.panelTop_KDR.ResumeLayout(false);
             this.panelLeftTop_KDR.ResumeLayout(false);
             this.panelLeft_KDR.ResumeLayout(false);
@@ -831,9 +849,9 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.panelBottom_KDR.ResumeLayout(false);
             this.groupBoxKolTeach_KDR.ResumeLayout(false);
             this.groupBoxKolTeach_KDR.PerformLayout();
-            this.panelFill_KDR.ResumeLayout(false);
             this.groupBoxKolPre_KDR.ResumeLayout(false);
             this.groupBoxKolPre_KDR.PerformLayout();
+            this.panelFill_KDR.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -897,6 +915,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
         private System.Windows.Forms.TextBox textBoxKolPred_KDR;
         private System.Windows.Forms.Button buttonMaxPred_KDR;
         private System.Windows.Forms.Button buttonMinPred_KDR;
+        private System.Windows.Forms.Button buttonManagement_KDR;
     }
 }
 

@@ -518,6 +518,8 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             groupBoxKolPre_KDR.Visible = true;
             textBoxKolPred_KDR.Visible = true;
             buttonSumPred_KDR.Visible = true;
+            groupBoxKolPre_KDR.Text = "Общее количество учебных часов в семестре:";
+            textBoxKolPred_KDR.Text = "";
         }
         private void buttonRedPred_KDR_Click(object sender, EventArgs e)
         {
@@ -606,23 +608,69 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
         }
         private void buttonSumPred_KDR_Click(object sender, EventArgs e)
         {
-            string[,] DataMatrix = ds.GetData(path4);
-            int res = ds.GetAllHours(DataMatrix);
-            textBoxKolPred_KDR.Text = Convert.ToString(res);
+            if (groupBoxKolPre_KDR.Text == "Общее количество учебных часов в семестре:")
+            {
+                string[,] DataMatrix = ds.GetData(path4);
+                int[] res = ds.GetAllHours(DataMatrix);
+                double sum = 0;
+                for (int i = 0; i < res.Length; i++)
+                {
+                    sum += res[i];
+                }
+                textBoxKolPred_KDR.Text = Convert.ToString(sum);
+            }
+            if (groupBoxKolPre_KDR.Text == "Минимальное количество часов по предмету:")
+            {
+                string[,] DataMatrix = ds.GetData(path4);
+                int[] res = ds.GetAllHours(DataMatrix);
+                int min = ds.MinValue(res);
+                textBoxKolPred_KDR.Text = Convert.ToString(min);
+            }
+            if (groupBoxKolPre_KDR.Text == "Максимальное количество часов по предмету:")
+            {
+                string[,] DataMatrix = ds.GetData(path4);
+                int[] res = ds.GetAllHours(DataMatrix);
+                int max = ds.MaxValue(res);
+                textBoxKolPred_KDR.Text = Convert.ToString(max);
+            }
         }
 
         private void buttonMinPred_KDR_Click(object sender, EventArgs e)
         {
-
+            groupBoxKolPre_KDR.Text = "Минимальное количество часов по предмету:";
+            textBoxKolPred_KDR.Text = "";
+            panelBottom_KDR.Visible = true;
+            groupBoxKolTeach_KDR.Visible = true;
+            groupBoxKolPre_KDR.Visible = true;
+            textBoxKolPred_KDR.Visible = true;
+            buttonSumPred_KDR.Visible = true;
         }
         private void buttonMaxPred_KDR_Click(object sender, EventArgs e)
         {
-
+            groupBoxKolPre_KDR.Text = "Максимальное количество часов по предмету:";
+            textBoxKolPred_KDR.Text = "";
+            panelBottom_KDR.Visible = true;
+            groupBoxKolTeach_KDR.Visible = true;
+            groupBoxKolPre_KDR.Visible = true;
+            textBoxKolPred_KDR.Visible = true;
+            buttonSumPred_KDR.Visible = true;
         }
         private void buttonGraphTech_KDR_Click(object sender, EventArgs e)
         {
             Func func = new Func();
             func.ShowDialog();
+        }
+
+        private void buttonInfo_KDR_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.ShowDialog();
+        }
+
+        private void buttonManagement_KDR_Click(object sender, EventArgs e)
+        {
+            Management manag = new Management();
+            manag.ShowDialog();
         }
     } 
 }

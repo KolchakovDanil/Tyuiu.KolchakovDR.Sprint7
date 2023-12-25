@@ -29,13 +29,13 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Func));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelTop_KDR = new System.Windows.Forms.Panel();
             this.panelLeftTop_KDR = new System.Windows.Forms.Panel();
-            this.buttonOpenFile_KDR = new System.Windows.Forms.Button();
             this.panelLeft_KDR = new System.Windows.Forms.Panel();
             this.buttonLoadLesson_KDR = new System.Windows.Forms.Button();
             this.buttonLoadDepartment_KDR = new System.Windows.Forms.Button();
@@ -43,8 +43,9 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonLoadTeacher_KDR = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.chartPre_KDR = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.buttonInfo_KDR = new System.Windows.Forms.Button();
+            this.toolTip_KDR = new System.Windows.Forms.ToolTip(this.components);
             this.panelTop_KDR.SuspendLayout();
-            this.panelLeftTop_KDR.SuspendLayout();
             this.panelLeft_KDR.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartPre_KDR)).BeginInit();
@@ -53,6 +54,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             // panelTop_KDR
             // 
             this.panelTop_KDR.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.panelTop_KDR.Controls.Add(this.buttonInfo_KDR);
             this.panelTop_KDR.Controls.Add(this.panelLeftTop_KDR);
             this.panelTop_KDR.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop_KDR.Location = new System.Drawing.Point(0, 0);
@@ -63,24 +65,11 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             // panelLeftTop_KDR
             // 
             this.panelLeftTop_KDR.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panelLeftTop_KDR.Controls.Add(this.buttonOpenFile_KDR);
             this.panelLeftTop_KDR.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeftTop_KDR.Location = new System.Drawing.Point(0, 0);
             this.panelLeftTop_KDR.Name = "panelLeftTop_KDR";
             this.panelLeftTop_KDR.Size = new System.Drawing.Size(200, 68);
             this.panelLeftTop_KDR.TabIndex = 1;
-            // 
-            // buttonOpenFile_KDR
-            // 
-            this.buttonOpenFile_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOpenFile_KDR.BackgroundImage")));
-            this.buttonOpenFile_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.buttonOpenFile_KDR.FlatAppearance.BorderSize = 0;
-            this.buttonOpenFile_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonOpenFile_KDR.Location = new System.Drawing.Point(5, 10);
-            this.buttonOpenFile_KDR.Name = "buttonOpenFile_KDR";
-            this.buttonOpenFile_KDR.Size = new System.Drawing.Size(57, 49);
-            this.buttonOpenFile_KDR.TabIndex = 4;
-            this.buttonOpenFile_KDR.UseVisualStyleBackColor = true;
             // 
             // panelLeft_KDR
             // 
@@ -110,6 +99,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonLoadLesson_KDR.Size = new System.Drawing.Size(200, 58);
             this.buttonLoadLesson_KDR.TabIndex = 3;
             this.buttonLoadLesson_KDR.Text = "Предметы";
+            this.toolTip_KDR.SetToolTip(this.buttonLoadLesson_KDR, "Представление количества часов в виде диаграммы");
             this.buttonLoadLesson_KDR.UseVisualStyleBackColor = true;
             // 
             // buttonLoadDepartment_KDR
@@ -128,6 +118,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonLoadDepartment_KDR.Size = new System.Drawing.Size(200, 58);
             this.buttonLoadDepartment_KDR.TabIndex = 2;
             this.buttonLoadDepartment_KDR.Text = "Кафедры";
+            this.toolTip_KDR.SetToolTip(this.buttonLoadDepartment_KDR, "Представление в виде диаграммы, пока что не доступно");
             this.buttonLoadDepartment_KDR.UseVisualStyleBackColor = true;
             // 
             // buttonLoadClass_KDR
@@ -146,6 +137,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonLoadClass_KDR.Size = new System.Drawing.Size(200, 58);
             this.buttonLoadClass_KDR.TabIndex = 1;
             this.buttonLoadClass_KDR.Text = "Аудитории";
+            this.toolTip_KDR.SetToolTip(this.buttonLoadClass_KDR, "Представление в виде диаграммы, пока что не доступно");
             this.buttonLoadClass_KDR.UseVisualStyleBackColor = true;
             // 
             // buttonLoadTeacher_KDR
@@ -166,6 +158,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.buttonLoadTeacher_KDR.Size = new System.Drawing.Size(200, 58);
             this.buttonLoadTeacher_KDR.TabIndex = 0;
             this.buttonLoadTeacher_KDR.Text = "Преподаватели";
+            this.toolTip_KDR.SetToolTip(this.buttonLoadTeacher_KDR, "Представление в виде диаграммы, пока что не доступно");
             this.buttonLoadTeacher_KDR.UseVisualStyleBackColor = false;
             // 
             // panel1
@@ -179,22 +172,37 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             // 
             // chartPre_KDR
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartPre_KDR.ChartAreas.Add(chartArea2);
+            chartArea1.Name = "ChartArea1";
+            this.chartPre_KDR.ChartAreas.Add(chartArea1);
             this.chartPre_KDR.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Enabled = false;
-            legend2.Name = "Legend1";
-            this.chartPre_KDR.Legends.Add(legend2);
+            legend1.Enabled = false;
+            legend1.Name = "Legend1";
+            this.chartPre_KDR.Legends.Add(legend1);
             this.chartPre_KDR.Location = new System.Drawing.Point(0, 0);
             this.chartPre_KDR.Name = "chartPre_KDR";
-            series2.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartPre_KDR.Series.Add(series2);
+            series1.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.NotSet;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartPre_KDR.Series.Add(series1);
             this.chartPre_KDR.Size = new System.Drawing.Size(709, 433);
             this.chartPre_KDR.TabIndex = 0;
             this.chartPre_KDR.Text = "chart1";
+            // 
+            // buttonInfo_KDR
+            // 
+            this.buttonInfo_KDR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonInfo_KDR.BackgroundImage")));
+            this.buttonInfo_KDR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonInfo_KDR.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonInfo_KDR.FlatAppearance.BorderSize = 0;
+            this.buttonInfo_KDR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInfo_KDR.Location = new System.Drawing.Point(839, 0);
+            this.buttonInfo_KDR.Name = "buttonInfo_KDR";
+            this.buttonInfo_KDR.Size = new System.Drawing.Size(70, 68);
+            this.buttonInfo_KDR.TabIndex = 7;
+            this.toolTip_KDR.SetToolTip(this.buttonInfo_KDR, "О программе");
+            this.buttonInfo_KDR.UseVisualStyleBackColor = true;
+            this.buttonInfo_KDR.Click += new System.EventHandler(this.buttonInfo_KDR_Click);
             // 
             // Func
             // 
@@ -210,7 +218,6 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             this.Text = "Изображение значений таблиц в виде диаграммы";
             this.Load += new System.EventHandler(this.FormFunc_Load);
             this.panelTop_KDR.ResumeLayout(false);
-            this.panelLeftTop_KDR.ResumeLayout(false);
             this.panelLeft_KDR.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chartPre_KDR)).EndInit();
@@ -222,7 +229,6 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
 
         private System.Windows.Forms.Panel panelTop_KDR;
         private System.Windows.Forms.Panel panelLeftTop_KDR;
-        private System.Windows.Forms.Button buttonOpenFile_KDR;
         private System.Windows.Forms.Panel panelLeft_KDR;
         private System.Windows.Forms.Button buttonLoadLesson_KDR;
         private System.Windows.Forms.Button buttonLoadDepartment_KDR;
@@ -230,5 +236,7 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
         private System.Windows.Forms.Button buttonLoadTeacher_KDR;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartPre_KDR;
+        private System.Windows.Forms.Button buttonInfo_KDR;
+        private System.Windows.Forms.ToolTip toolTip_KDR;
     }
 }

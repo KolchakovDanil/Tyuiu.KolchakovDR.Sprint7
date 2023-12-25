@@ -16,5 +16,10 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
         {
             InitializeComponent();
         }
+
+        private void buttonDone_KDR_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

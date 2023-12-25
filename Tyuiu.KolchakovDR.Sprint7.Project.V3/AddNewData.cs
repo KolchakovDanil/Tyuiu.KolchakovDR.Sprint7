@@ -86,6 +86,25 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             }
         }
 
+        private void buttonLoadTeacher_KDR_Click(object sender, EventArgs e)
+        {
+            int x = 1 + ds.GetCountRows(path1);
+            textBoxIDTeach_KDR.Text = Convert.ToString(x);
+            groupBoxTeach_KDR.Visible = true;
+        }
+
+        private void buttonInfo_KDR_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.ShowDialog();
+        }
+
+        private void buttonManagement_KDR_Click(object sender, EventArgs e)
+        {
+            Management manag = new Management();
+            manag.ShowDialog();
+        }
+
     }
     
 }

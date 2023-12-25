@@ -68,5 +68,11 @@ namespace Tyuiu.KolchakovDR.Sprint7.Project.V3
             chartPre_KDR.ChartAreas[0].AxisX.MajorGrid.Enabled = false;
             chartPre_KDR.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
         }
+
+        private void buttonInfo_KDR_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.ShowDialog();
+        }
     }
 }
